@@ -5,7 +5,7 @@ import org.springframework.data.relational.core.mapping.Table;
 
 import java.util.Objects;
 
-@Table("COUNTRIES")
+@Table("countries")
 public class Country {
     @Id
     private Long id;
