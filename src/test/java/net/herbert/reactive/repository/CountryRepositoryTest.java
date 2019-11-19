@@ -15,7 +15,7 @@ public class CountryRepositoryTest {
     }
 
     @Test @DisplayName("Test that the country database is not empty")
-    private void testThatTheCountryDatabaseIsNotEmpty() {
+    public void testThatTheCountryDatabaseIsNotEmpty() {
         countryRepository.count()
                 .as(StepVerifier::create)
                 .expectNext(3L)
