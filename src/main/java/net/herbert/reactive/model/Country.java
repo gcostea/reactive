@@ -1,9 +1,11 @@
 package net.herbert.reactive.model;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.relational.core.mapping.Table;
 
 import java.util.Objects;
 
+@Table("countries")
 public class Country {
     @Id
     private Long id;
